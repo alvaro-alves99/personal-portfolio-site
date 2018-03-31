@@ -22,6 +22,14 @@
     transform: translatey(-100%);
 }
 
+.title--escondido .title__name{
+    border-left:4px solid #65b8fc !important;
+}
+
+.title--escondido .title__profession{
+    border-bottom:4px solid #65b8fc !important;
+}
+
 .opacidade0{
     opacity:0 !important;
 }
