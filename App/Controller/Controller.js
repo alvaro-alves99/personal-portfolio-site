@@ -3,6 +3,6 @@ class Controller{
         this.containerPai = containerpai;
         this.botao = botao;
 
-        this.view = new View();
+        this.view = new View(containerpai, botao);
     }
 }

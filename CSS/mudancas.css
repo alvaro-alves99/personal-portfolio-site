@@ -21,3 +21,7 @@
     left: 0;
     transform: translatey(-100%);
 }
+
+.opacidade0{
+    opacity:0 !important;
+}
