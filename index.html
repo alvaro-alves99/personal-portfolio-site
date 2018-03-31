@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="CSS/geral.css">
+        <link rel="stylesheet" href="CSS/mudancas.css">
     </head>
     <body>
         <div class="container">
@@ -33,14 +34,30 @@
 
             <section class="title">
                 <div class="title__name">
-                    <h1>Álvaro Alves</h1>
+                    <h1 class="">Álvaro Alves</h1>
                 </div>
                 <div class="title__profession">
-                    <h2>Desenvolvedor Front-End e Designer</h2>
+                    <h2 class="">Desenvolvedor Front-End e Designer</h2>
                 </div>
             </section>
 
         </div>
 
+        <script>
+
+        var $ = document.querySelector.bind(document);
+        var botoes = document.querySelectorAll('.botao-navegacao');
+
+        botoes.forEach(function(botao){
+            botao.addEventListener('click', function(){
+                console.log("clicou");
+                new Controller(botao, botao.parentNode);
+            })
+        });
+
+        </script>
+
+        <script src="App/Controller/Controller.js"></script>
+        <script src="App/View/View.js"></script>
     </body>
 </html>

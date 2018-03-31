@@ -1,0 +1,23 @@
+.containerbg--encolhido{
+    width:17.5% !important;
+}
+
+.containerbg--selecionado{
+    width:30% !important;
+    background-image:none;
+    background-color:white;
+}
+
+.logo--encolhido{
+    font-size:4em !important;
+}
+
+.subtitulo--encolhido{
+    font-size:1em !important;
+}
+
+.title--escondido{
+    top: 100%;
+    left: 0;
+    transform: translatey(-100%);
+}

@@ -65,12 +65,12 @@ div{
     display:inline-block;
     top:57%;
     left:8%;
+    transition:.8s;
 }
 
 .title__name{
     background-color:white;
-    width: 96%;
-    padding:10px 15px 0px 30px;
+    padding:10px 25px 0px 30px;
     border-left:6px solid #65b8fc;
 }
 
