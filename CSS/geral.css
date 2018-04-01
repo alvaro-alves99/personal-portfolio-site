@@ -17,6 +17,7 @@ h1, h2, h3, h4{
     display:inline-block;
 }
 
+
 /*LAYOUT BACKGROUND*/
 
 .container{
@@ -39,7 +40,24 @@ h1, h2, h3, h4{
     height:100%;
     background-image:url(imagens/Pavement2.jpg);
     background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
     transition:.8s;
+}
+
+.bg1{
+    background-image:url(imagens/codigo.jpg);
+    background-position: -332px !important;
+    filter:grayscale(1);
+}
+
+.bg2{
+    background-image:url(imagens/experiencia.jpg);
+}
+
+
+.bg3{
+    background-image:url(imagens/formacao.jpg);
 }
 
 /*LAYOUT BOTAO NAVEGACAO*/
@@ -172,7 +190,11 @@ h1, h2, h3, h4{
 
 .informacao__containerbg h4{
     font-size:1.4em;
-    margin-bottom:0px;
+    margin:0px;
+}
+
+.informacao__containerbg p{
+    margin-bottom:10px;
 }
 
 .informacao__containerbg li:not(:last-child){
@@ -181,4 +203,18 @@ h1, h2, h3, h4{
 
 .informacao__containerbg li::before{
     content:"- ";
+}
+
+.emprego-item{
+    margin-top: 45px;
+}
+
+.container-experiencia{
+    width:90% !important;
+    top:10%;
+}
+
+.descricao-job{
+    width:96%;
+    margin-right:0;
 }

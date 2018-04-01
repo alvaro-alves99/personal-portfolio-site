@@ -1,14 +1,15 @@
 class View{
     constructor(pai, botao){
+        console.log(pai);
         console.log(botao.textContent);
 
         if($('.containerbg--selecionado')){
 
+            $('.containerbg--selecionado').classList.remove('containerbg--selecionado');
+
             if($('.informacao__containerbg')){
                 $('.informacao__containerbg').innerHTML = ``;
             }
-
-            $('.containerbg--selecionado').classList.remove('containerbg--selecionado');
 
         }
 
@@ -16,6 +17,16 @@ class View{
 
         if(botao.textContent == 'Habilidades'){
             View.viewHabilidades(pai);
+
+            setTimeout(function(){
+                $('.informacao__containerbg').classList.remove('opacidade0');
+            }, 200);
+
+            Helper.atribuiEventos();
+        }
+
+        if(botao.textContent == 'Experiência'){
+            View.viewExperiencia(pai);
 
             setTimeout(function(){
                 $('.informacao__containerbg').classList.remove('opacidade0');
@@ -65,6 +76,31 @@ class View{
                 </div>
             </div>
 
+        `;
+    }
+
+    static viewExperiencia(pai){
+        pai.innerHTML = `
+
+        <a href="#" class="botao-navegacao">Experiência</a>
+        <div class="informacao__containerbg container-experiencia opacidade0">
+
+            <div class="lista-container">
+                <p>Tabatinga Free Shop</p>
+                <h4>Estagiário de Web Design</h4>
+                <p>Setembro 2018 -<br>Atualmente</p>
+                <p class="descricao-job">Construo sites completos do zero para marcas de perfumes e cosméticos famosas que chegam ao Brasil (ou que já atuam por aqui).<br><br>
+                    Exemplo de um site desenvolvido: <br><a href="http://www.cubaperfumesoficial.com.br/" target="_blank">Cuba Perfumes</a></p>
+
+            <div class="emprego-item">
+                <p>Quality SP</p>
+                <h4>Estagiário de Web Design</h4>
+                <p>Julho 2018 -<br>Setembro 2018</p>
+                <p>Auxiliei no gerenciamento do site de e-commerce da empresa, adicionando fotos, substituindo banners etc</p>
+            </div>
+
+            </div>
+        </div>
         `;
     }
 }
