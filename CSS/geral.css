@@ -52,6 +52,7 @@ h1, h2, h3, h4{
 
 .bg2{
     background-image:url(imagens/experiencia.jpg);
+    background-position: -720px;
 }
 
 
@@ -219,9 +220,8 @@ h1, h2, h3, h4{
 }
 
 .conteudobg{
-    display:none;
     opacity:0;
-    transition:.8s;
+    transition:1s;
 }
 
 .lista-social li, a{
