@@ -1,19 +1,23 @@
 class View{
     constructor(pai, botao){
-        console.log(pai);
-        console.log(botao.textContent);
+
+        console.log('ESSE E O CONTAINER')
+        console.log($('.containerbg--selecionado'));
 
         if($('.containerbg--selecionado')){
 
             $('.containerbg--selecionado').classList.remove('containerbg--selecionado');
 
+            /*
             if($('.informacao__containerbg')){
                 $('.informacao__containerbg').innerHTML = ``;
-            }
+            }*/
 
         }
 
         pai.classList.add('containerbg--selecionado');
+
+        /*
 
         if(botao.textContent == 'Habilidades'){
             View.viewHabilidades(pai);
@@ -22,18 +26,26 @@ class View{
                 $('.informacao__containerbg').classList.remove('opacidade0');
             }, 200);
 
-            Helper.atribuiEventos();
         }
 
         if(botao.textContent == 'Experiência'){
+            console.log("cai nessa condicional");
             View.viewExperiencia(pai);
 
-            setTimeout(function(){
-                $('.informacao__containerbg').classList.remove('opacidade0');
-            }, 200);
+                console.log($('.informacao__containerbg'));
+                let containers = document.querySelectorAll('.informacao__containerbg');
 
-            Helper.atribuiEventos();
-        }
+                containers.forEach(function(container){
+                container.classList.remove('opacidade0');
+            });
+
+
+
+            //Helper.atribuiEventos();
+
+    }
+
+    */
 
 
         View.viewTitle();
@@ -49,8 +61,7 @@ class View{
     }
 
     static viewHabilidades(pai){
-        pai.innerHTML = `
-            <a href="#" class="botao-navegacao">Habilidades</a>
+        $('.conteudobg-1').innerHTML = `
 
             <div class="informacao__containerbg opacidade0">
                 <div class="informacao__area">
@@ -80,9 +91,7 @@ class View{
     }
 
     static viewExperiencia(pai){
-        pai.innerHTML = `
-
-        <a href="#" class="botao-navegacao">Experiência</a>
+        $('.conteudobg-2').innerHTML = `
         <div class="informacao__containerbg container-experiencia opacidade0">
 
             <div class="lista-container">

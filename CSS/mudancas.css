@@ -33,3 +33,15 @@
 .opacidade0{
     opacity:0 !important;
 }
+
+.containerbg--selecionado .conteudobg{
+    display: inline-block !important;
+    opacity: 1 !important;
+    width: 100%;
+    height: 100%;
+
+}
+
+.containerbg--selecionado .informacao__containerbg{
+    opacity:1 !important;
+}

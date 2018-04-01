@@ -48,7 +48,6 @@ h1, h2, h3, h4{
 .bg1{
     background-image:url(imagens/codigo.jpg);
     background-position: -332px !important;
-    filter:grayscale(1);
 }
 
 .bg2{
@@ -172,8 +171,8 @@ h1, h2, h3, h4{
     padding-left:60px;
     box-sizing:border-box;
     font-family:'Raleway', sans-serif;
-    opacity:1;
-    transition:1s;
+    opacity:0;
+    transition:2s;
 }
 
 .informacao__area h3{
@@ -217,4 +216,49 @@ h1, h2, h3, h4{
 .descricao-job{
     width:96%;
     margin-right:0;
+}
+
+.conteudobg{
+    display:none;
+    opacity:0;
+    transition:.8s;
+}
+
+.lista-social li, a{
+    display:inline-block;
+}
+
+.lista-social li::before{
+    content:"" !important;
+}
+
+.lista-social li:not(:last-child){
+    margin-right:10px;
+}
+
+.portfolio-container h4{
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.lista-social a{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    text-indent:-9999px;
+}
+
+.behance-icon{
+    background-image:url(imagens/behance.png);
+}
+
+.linkedin-icon{
+    background-image:url(imagens/linkedin.png);
+}
+
+.git-icon{
+    background-image:url(imagens/github.png);
 }

@@ -4,16 +4,24 @@ class Helper{
     }
 
     static atribuiEventos(){
+
+        function adicionaController(){
+            new Controller(botao, botao.parentNode);
+        }
+
         var botoes = document.querySelectorAll('.botao-navegacao');
 
-        botoes.forEach(function(botao){
-            botao.removeEventListener('click', function(){
-                new Controller(botao, botao.parentNode);
-            })
+        console.log(botoes);
 
-            botao.addEventListener('click', function(){
-                new Controller(botao, botao.parentNode);
-            })
-        });
-    }
+        botoes.forEach((botao) => {
+            console.log(botao);
+
+            botao.removeEventListener('click', adicionaController);
+            botao.addEventListener('click', adicionaController);
+            }
+        );
+
+
+}
+
 }
