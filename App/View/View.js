@@ -8,44 +8,10 @@ class View{
 
             $('.containerbg--selecionado').classList.remove('containerbg--selecionado');
 
-            /*
-            if($('.informacao__containerbg')){
-                $('.informacao__containerbg').innerHTML = ``;
-            }*/
-
         }
 
         pai.classList.add('containerbg--selecionado');
 
-        /*
-
-        if(botao.textContent == 'Habilidades'){
-            View.viewHabilidades(pai);
-
-            setTimeout(function(){
-                $('.informacao__containerbg').classList.remove('opacidade0');
-            }, 200);
-
-        }
-
-        if(botao.textContent == 'Experiência'){
-            console.log("cai nessa condicional");
-            View.viewExperiencia(pai);
-
-                console.log($('.informacao__containerbg'));
-                let containers = document.querySelectorAll('.informacao__containerbg');
-
-                containers.forEach(function(container){
-                container.classList.remove('opacidade0');
-            });
-
-
-
-            //Helper.atribuiEventos();
-
-    }
-
-    */
 
 
         View.viewTitle();
